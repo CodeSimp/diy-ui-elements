@@ -1,0 +1,63 @@
+/*The Icons*/
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.cls-1{
+    fill: none;
+}
+.cls-2{
+    fill: white;
+}
+
+nav{
+    display: inline-flex;
+    border-radius: 0.8rem;
+    padding: 1.6rem 2.4rem;
+    justify-content: center;
+    background-color: #1A0332;
+}
+
+a{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    margin: 0 0.4rem;
+    cursor: pointer;
+    transition: background-color 200ms linear, opacity 300ms linear;
+}
+a .cls-2{
+    transition: fill 200ms linear;
+}
+
+a:nth-child(1):hover, a:nth-child(1):hover .cls-2{
+    fill: #12CC50;
+    background-color: #182A36;
+}
+a:nth-child(2):hover, a:nth-child(2):hover .cls-2{
+    fill: #FF3A7A;
+    background-color: #33093A;
+}
+a:nth-child(3):hover, a:nth-child(3):hover .cls-2{
+    fill: #7500F8;
+    background-color: #210342;
+}
+a:nth-child(4):hover, a:nth-child(4):hover .cls-2{
+    fill: #0D34F5;
+    background-color: #190744;
+}
+
+a:nth-child(1):hover, a:nth-child(1):hover .cls-2,
+a:nth-child(2):hover, a:nth-child(2):hover .cls-2,
+a:nth-child(4):hover, a:nth-child(4):hover .cls-2,
+a:nth-child(3):hover, a:nth-child(3):hover .cls-2{
+    transition: background-color 300ms linear, fill 150ms linear;
+}
+
+a:active{
+    opacity: 0.8;
+    transition: opacity 300ms linear;
+}
