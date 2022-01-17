@@ -1,0 +1,104 @@
+body{
+    background-color: #FDFBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.field{
+    padding: 1.6rem 2.4rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #1A0332;
+    color: white;
+}
+
+.text{
+    margin-right: 16px;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    transition: background-color 200ms linear,
+                opacity 200ms linear;
+}
+button::after{
+    content: 'Copied to Clipboard';
+    display: inline-flex;
+    white-space: nowrap;
+    background-color: #1F033E;
+    position: absolute;
+    padding: 8px;
+    border-radius: 4px 6px;
+    top: -80%;
+    left: -70%;
+    color: white;
+
+    margin-top: 20px;
+    opacity: 0;
+}
+button::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #1F033E;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -70%;
+    
+    margin-top: 20px;
+    opacity: 0;
+}
+
+button .material-icons-outlined{
+    font-size: 32px;
+    color: #cbcbcb;
+    transition: color 200ms linear;
+}
+
+button:hover, button:hover .material-icons-outlined{
+    background-color: #1F033E;
+    color: #5504F5;
+
+    transition: color 200ms linear,
+                background-color 200ms linear;
+}
+
+/*Displays the hover msg*/
+.show-msg::before, .show-msg::after{
+    margin-top: 0;
+    opacity: 1;
+    transition: margin 100ms linear, opacity 200ms linear;
+}
+
+button:active{
+    opacity: 0.8;
+    transition: opacity 200ms linear;
+}
+
+.paste{
+    padding: 1.6rem;
+    border-radius: 8px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background-color: #1A0332;
+    font-size: 24px;
+    color: white;
+}
