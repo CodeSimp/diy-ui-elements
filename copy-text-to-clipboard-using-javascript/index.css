@@ -51,7 +51,7 @@ button::after{
     color: white;
 
     margin-top: 20px;
-    opacity: 0;
+    visibility: hidden;
 }
 button::before{
     content: "";
@@ -63,7 +63,7 @@ button::before{
     top: -70%;
     
     margin-top: 20px;
-    opacity: 0;
+    visibility: hidden;
 }
 
 button .material-icons-outlined{
@@ -74,7 +74,7 @@ button .material-icons-outlined{
 
 button:hover, button:hover .material-icons-outlined{
     background-color: #1F033E;
-    color: #5504F5;
+    color: #9434FF;
 
     transition: color 200ms linear,
                 background-color 200ms linear;
@@ -83,8 +83,8 @@ button:hover, button:hover .material-icons-outlined{
 /*Displays the hover msg*/
 .show-msg::before, .show-msg::after{
     margin-top: 0;
-    opacity: 1;
-    transition: margin 100ms linear, opacity 200ms linear;
+    transition: margin 150ms linear;
+    visibility: visible;
 }
 
 button:active{
