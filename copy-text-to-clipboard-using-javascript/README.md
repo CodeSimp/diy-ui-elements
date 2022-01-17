@@ -1,4 +1,4 @@
-# Directions Of Use
+# Directions Of Use 🤟
 After cloning the repository, you can just normally run the HTML file.
 
 I have used a text input field to demonstrate the example, but you can use it on any type of element.
