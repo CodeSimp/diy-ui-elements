@@ -83,7 +83,7 @@ button:hover, button:hover .material-icons-outlined{
 /*Displays the hover msg*/
 .show-msg::before, .show-msg::after{
     margin-top: 0;
-    transition: margin 150ms linear;
+    transition: margin 100ms linear;
     visibility: visible;
 }
 
