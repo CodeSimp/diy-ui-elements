@@ -1,17 +1,18 @@
-/*The Icons*/
+/*Base Styles*/
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-}
-.cls-1{
-    fill: none;
-}
-.cls-2{
-    fill: white;
-}
+}  
 
+/*Styling The Navbar*/
 nav{
     display: inline-flex;
     border-radius: 0.8rem;
@@ -20,6 +21,7 @@ nav{
     background-color: #1A0332;
 }
 
+/*Styling the links*/
 a{
     display: inline-flex;
     align-items: center;
@@ -27,37 +29,39 @@ a{
     border-radius: 0.4rem;
     margin: 0 0.4rem;
     cursor: pointer;
-    transition: background-color 200ms linear, opacity 300ms linear;
+    transition: background-color 200ms linear, 
+                opacity 300ms linear;
+    color: #cbcbcb;
+    text-decoration: none;
 }
-a .cls-2{
-    transition: fill 200ms linear;
+a .material-icons-outlined{
+    font-size: 40px;
+    transition: color 200ms linear;
 }
 
-a:nth-child(1):hover, a:nth-child(1):hover .cls-2{
-    fill: #12CC50;
+
+/*Hover State*/
+a:nth-child(1):hover{
+    color: #11D244;
     background-color: #182A36;
 }
-a:nth-child(2):hover, a:nth-child(2):hover .cls-2{
-    fill: #FF3A7A;
-    background-color: #33093A;
-}
-a:nth-child(3):hover, a:nth-child(3):hover .cls-2{
-    fill: #7500F8;
-    background-color: #210342;
-}
-a:nth-child(4):hover, a:nth-child(4):hover .cls-2{
-    fill: #0D34F5;
-    background-color: #190744;
+a:nth-child(2):hover{
+    color: #FF3A7A;
+    background-color: #33093A;   
 }
 
-a:nth-child(1):hover, a:nth-child(1):hover .cls-2,
-a:nth-child(2):hover, a:nth-child(2):hover .cls-2,
-a:nth-child(4):hover, a:nth-child(4):hover .cls-2,
-a:nth-child(3):hover, a:nth-child(3):hover .cls-2{
-    transition: background-color 300ms linear, fill 150ms linear;
+a:nth-child(3):hover{
+    color: #9434FF;
+    background-color: #1F033E;   
+}
+   
+a:nth-child(4):hover{
+    color: #0D34F5;
+    background-color: #190744;   
 }
 
+/*Active State*/
 a:active{
     opacity: 0.8;
-    transition: opacity 300ms linear;
+    transition: opacity 200ms linear;
 }
