@@ -7,7 +7,7 @@ But the element should have text in it, otherwise what's the point right !
 So when you use it on a different element, just make sure to change the following things
 1. Select the element, from which the text is to be extracted inside the `index.js` file
 2. Extract the text value from it either using the `innerText` or in case of an **input** element, the `value` property.
-3. Pass that value in the following code
+3. Pass that value in the following line of code, inside the `index.js` file. 
 
 ```javascript
 navigator.clipboard.writeText(newTextValue)
