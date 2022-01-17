@@ -1,0 +1,45 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #100622;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.outer-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-image: linear-gradient(90deg, #79EDFF, #BC5EF1);
+    position: relative;
+}
+.outer-circle::after{
+    display: block;
+    content: "";
+    height: 95px;
+    width: 95px;
+    border-radius: 100px;
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    background-color: #100622;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.outer-circle{
+    animation: rotate 0.5s infinite linear;
+}
