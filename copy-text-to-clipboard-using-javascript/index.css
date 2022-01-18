@@ -38,6 +38,20 @@ button{
     transition: background-color 200ms linear,
                 opacity 200ms linear;
 }
+
+button .material-icons-outlined{
+    font-size: 32px;
+    color: #cbcbcb;
+    transition: color 200ms linear;
+}
+
+button:hover, button:hover .material-icons-outlined{
+    background-color: #1F033E;
+    color: #9434FF;
+    transition: color 200ms linear,
+                background-color 200ms linear;
+}
+
 button::after{
     content: 'Copied to Clipboard';
     display: inline-flex;
@@ -64,20 +78,6 @@ button::before{
     
     margin-top: 20px;
     visibility: hidden;
-}
-
-button .material-icons-outlined{
-    font-size: 32px;
-    color: #cbcbcb;
-    transition: color 200ms linear;
-}
-
-button:hover, button:hover .material-icons-outlined{
-    background-color: #1F033E;
-    color: #9434FF;
-
-    transition: color 200ms linear,
-                background-color 200ms linear;
 }
 
 /*Displays the hover msg*/

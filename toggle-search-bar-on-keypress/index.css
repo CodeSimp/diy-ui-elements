@@ -1,0 +1,133 @@
+*{
+    transition: all 200ms linear;
+}
+html{
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    font-size: 10px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.search-form{
+    padding: 2.4rem;
+    border: 1px solid rgba(112, 112, 112, 0.34);
+    border-radius: 0.8rem;
+    background-color: #0B031D;
+}
+body .material-icons-outlined{
+    color: #cbcbcb;
+}
+
+/*Search Field*/
+.search-field{
+    padding: 1.6rem 0;
+    display: flex;
+    align-items: center;
+}
+.search-field input{
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    min-width: 50rem;
+    color: white;
+    background-color: transparent;
+}
+
+.search-field input:focus{
+    color: white;
+}
+.search-field .material-icons-outlined{
+    color: #9504F5;
+    font-size: 3.2rem;
+}
+.search-field button{
+    border: 1px solid #cbcbcb;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    color: #cbcbcb;
+    background-color: transparent;
+}
+.search-field button:hover{
+    box-shadow: 1px 1px 5px rgba(112, 112, 112, 0.24);
+}
+.search-field button:active{
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+
+/*Headings*/
+h3{
+    font-size: 2.2rem;
+    color: #cbcbcb;
+    font-family: "Poppins";
+    font-weight: 500;
+    margin: 2.4rem 0 1.6rem 0;
+}
+
+
+
+/*Frequently Searched*/
+.frequently-searched a{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    margin-right: 1rem;
+    border: 1px solid #cbcbcb;
+    border-radius: 0.4rem;
+    color: #cbcbcb;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.frequently-searched a .material-icons-outlined{
+    margin-right: 0.5rem;
+}
+.frequently-searched a:hover{
+    background-color: rgba(255, 255, 255,0.1);
+}
+
+/*Recent Searches*/
+.recent-search{
+    display: flex;
+    padding: 1.6rem 1rem;
+    border-radius: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
+.recent-search > span:nth-child(2){
+    opacity: 0;
+}
+.recent-search:hover{
+    background-color: rgba(255, 255, 255,0.1);
+}
+.recent-search:hover > span:nth-child(2){
+    opacity: 1;
+}
+
+.recent-search p{
+    font-size: 1.6rem;
+    display: inline-flex;
+    color: #cbcbcb;
+    align-items: center;
+    margin: 0;
+}
+p span{
+    margin-right: 0.5rem;
+}
+.recent-search:active{
+    opacity: 0.8;
+}
+
+body .hide{
+    display: none;
+}
+.border-btm{
+    border-bottom: 1px solid #cbcbcb;
+}
