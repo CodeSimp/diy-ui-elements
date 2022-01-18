@@ -34,10 +34,12 @@ closeSearch.addEventListener('click', ()=>{
 })
 
 document.addEventListener('keydown', (e)=>{
-    console.log(e)
-    if(e.key === 'Control')
+    
+    if(e.key === 'Control'){
         openSearchBar()
-    else if(e.key === 'Escape')
+    }
+    else if(e.key === 'Escape'){
         closeSearchBar()
+    }
 })
 
