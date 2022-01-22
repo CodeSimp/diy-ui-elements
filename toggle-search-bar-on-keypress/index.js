@@ -4,8 +4,6 @@ const recentSearches = document.querySelectorAll('.recent-search')
 const searchField = document.querySelector('input')
 const openSearch = document.querySelector('button.open-search')
 const closeSearch = document.querySelector('button.close-search')
-
-
 const openSearchBar = ()=>{
     recentSearches.forEach(obj => obj.classList.remove('hide'))
     h3s.forEach(obj => obj.classList.remove('hide'))
@@ -22,19 +20,10 @@ const closeSearchBar = ()=>{
     openSearch.classList.remove('hide') 
     searchField.blur()
 }
-
-//The searchbar is closed initially
 closeSearchBar()
-
-openSearch.addEventListener('click', ()=>{
-    openSearchBar()  
-})
-closeSearch.addEventListener('click', ()=>{
-    closeSearchBar()  
-})
-
-document.addEventListener('keydown', (e)=>{
-    
+openSearch.addEventListener('click', ()=>openSearchBar())
+closeSearch.addEventListener('click', ()=>closeSearchBar())
+document.addEventListener('keydown', (e)=>{ 
     if(e.key === 'Control'){
         openSearchBar()
     }
