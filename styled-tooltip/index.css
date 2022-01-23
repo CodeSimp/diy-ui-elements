@@ -12,6 +12,7 @@ body{
     font-family: sans-serif;
 }
 
+
 button{
     width: 250px;
     padding: 20px;
@@ -26,6 +27,7 @@ button{
 button:hover{
     background-color: #320786;
 }
+
 
 
 .tool-tip-parent{
@@ -44,16 +46,13 @@ button:hover{
     white-space: nowrap;
     bottom: -100%;
     left: 33%;
-
     transform: translateY(-60%);
     opacity: 0;
     transition: transform 100ms linear,
                 opacity 100ms linear;
 }
 
-.tool-tip span{
-    z-index: 4;
-}
+
 .tool-tip::after{
     content: "";
     position: absolute;
@@ -63,9 +62,10 @@ button:hover{
     border-color: transparent transparent #0D0123 transparent;
 }
 
+
 .tool-tip-parent:hover .tool-tip{
     transform: translateY(0);
     opacity: 1;
-    transition: transform 200ms linear, 
-                opacity 200ms linear;
+    transition: transform 100ms linear, 
+                opacity 100ms linear;
 }

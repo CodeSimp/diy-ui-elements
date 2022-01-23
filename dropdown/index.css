@@ -1,0 +1,78 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*BUTTON*/
+button{
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background-color: #5504f5;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms linear;
+}
+button span:nth-child(1){
+    margin-right: 6px;
+}
+button span{
+    transition: all 200ms linear;
+}
+.dropdown-parent:hover  button .material-icons-outlined{
+    transform: rotate(180deg);
+}
+button:hover{
+    background-color: #32058A;
+}
+
+
+.dropdown-parent{
+    display: relative;
+}
+.dropdown-menu{
+    margin-top: 2px;
+    transition: all 200ms linear;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #11032B;
+    position: absolute;
+    transform: translateY(-100px);
+    transition: transform 200ms linear;
+}
+.dropdown-menu a{
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.dropdown-menu a span:nth-child(1){
+    margin-right: 6px;
+}
+
+.dropdown-menu a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 200ms linear;
+}
+
+.dropdown-parent:hover .dropdown-menu{
+    display: grid;
+    transform: translateY(0);
+}
