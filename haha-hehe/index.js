@@ -1,4 +1,5 @@
 
+//Function to get the joke
 const getJoke = async() => {
     //Getting the joke container
     const joke = document.querySelector('#joke p')
@@ -17,6 +18,7 @@ const getJoke = async() => {
     joke.innerHTML = res.data.joke
 }
 
+//Listening to the button click
 document.querySelector('#get-joke')
 .addEventListener('click', ()=>{
     getJoke()
